@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p id="text1"></p>
+    <p id="text2" style="color:red"></p>
+    <p id="text3" style="color:red"></p>
+
+    <script>
+        var i = 0;
+        var text = "";
+        var text2 = "";
+        var text3 = "";
+        while (i <= 50) {
+            if (i % 5 == 0) {
+                text3 += i + " merah ";
+            }
+            if (i % 3 == 0) {
+                text2 += i + " ";
+            }
+            text += i + " ";
+            i++;
+        }
+        document.getElementById("text1").innerHTML = text;
+        document.getElementById("text2").innerHTML = text2;
+        document.getElementById("text3").innerHTML = text3;
+    </script>
+
+</body>
+
+</html>
